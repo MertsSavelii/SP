@@ -83,25 +83,25 @@ namespace RaGsystems
                         break;
                     case "1.2": // Compound automata  Lab 1.
                         FSAutomate[] automats = new FSAutomate[] {
-                new FSAutomate(
+                        new FSAutomate(
                         new List<Symbol>() { "S01", "A1", "B1", "C1", "qf1" },
                         new List<Symbol>() { "0" },
                         new List<Symbol>() { "qf1" },
                         "S01"
-                    ),
-                new FSAutomate(
+                        ),
+                        new FSAutomate(
                         new List<Symbol>() { "S02", "A2", "B2", "C2", "D2", "qf2" },
                         new List<Symbol>() { "0", "1", "(", ")", "+" },
                         new List<Symbol>() { "qf2" },
                         "S02"
-                    ),
-                new FSAutomate(
+                        ),
+                        new FSAutomate(
                         new List<Symbol>() { "S03", "qf3" },
                         new List<Symbol>() { "0", "1" },
                         new List<Symbol>() { "qf3" },
                         "S03"
-                    ),
-            };
+                        ),
+                    };
                         //deltas
                         automats[0].AddRule("S01", "0", "A1");
                         automats[0].AddRule("A1", "0", "B1");
@@ -206,26 +206,26 @@ namespace RaGsystems
                         break;
                         */
 
-                    var ka6 = new FSAutomate(new List<Symbol>() { "S0", "A", "B", "C", "D", "E", "F", "G", "H", "I", "qf" },
-                                             new List<Symbol>() { "p", "o", "#", " ", "-", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" },
-                                             new List<Symbol>() { "qf" }, "S0");
-                    ka6.AddRule("S0", "p", "A");
-                    ka6.AddRule("A", "o", "B");
-                    ka6.AddRule("B", "#", "C");
-                    ka6.AddRule("B", "-", "C");
-                    ka6.AddRule("B", " ", "C");
-                    ka6.AddRule("C", "0", "D"); ka6.AddRule("C", "1", "D"); ka6.AddRule("C", "2", "D"); ka6.AddRule("C", "3", "D"); ka6.AddRule("C", "4", "D"); ka6.AddRule("C", "5", "D"); ka6.AddRule("C", "6", "D"); ka6.AddRule("C", "7", "D"); ka6.AddRule("C", "8", "D"); ka6.AddRule("C", "9", "D");
-                    ka6.AddRule("D", "0", "E"); ka6.AddRule("D", "1", "E"); ka6.AddRule("D", "2", "E"); ka6.AddRule("D", "3", "E"); ka6.AddRule("D", "4", "E"); ka6.AddRule("D", "5", "E"); ka6.AddRule("D", "6", "E"); ka6.AddRule("D", "7", "E"); ka6.AddRule("D", "8", "E"); ka6.AddRule("D", "9", "E");
-                    ka6.AddRule("E", "-", "F");
-                    ka6.AddRule("E", " ", "F");
-                    ka6.AddRule("F", "0", "G"); ka6.AddRule("F", "1", "G"); ka6.AddRule("F", "2", "G"); ka6.AddRule("F", "3", "G"); ka6.AddRule("F", "4", "G"); ka6.AddRule("F", "5", "G"); ka6.AddRule("F", "6", "E"); ka6.AddRule("F", "7", "E"); ka6.AddRule("F", "8", "E"); ka6.AddRule("F", "9", "E");
-                    ka6.AddRule("G", "0", "H"); ka6.AddRule("G", "1", "H"); ka6.AddRule("G", "2", "H"); ka6.AddRule("G", "3", "H"); ka6.AddRule("G", "4", "H"); ka6.AddRule("G", "5", "H"); ka6.AddRule("G", "6", "H"); ka6.AddRule("G", "7", "H"); ka6.AddRule("G", "8", "H"); ka6.AddRule("G", "9", "H");
-                    ka6.AddRule("H", "0", "I"); ka6.AddRule("H", "1", "I"); ka6.AddRule("H", "2", "I"); ka6.AddRule("H", "3", "I"); ka6.AddRule("H", "4", "I"); ka6.AddRule("H", "5", "I"); ka6.AddRule("H", "6", "I"); ka6.AddRule("H", "7", "I"); ka6.AddRule("H", "8", "I"); ka6.AddRule("H", "9", "I");
-                    ka6.AddRule("I", "0", "qf"); ka6.AddRule("I", "1", "qf"); ka6.AddRule("I", "2", "qf"); ka6.AddRule("I", "3", "qf"); ka6.AddRule("I", "4", "qf"); ka6.AddRule("I", "5", "qf"); ka6.AddRule("I", "6", "qf"); ka6.AddRule("I", "7", "qf"); ka6.AddRule("I", "8", "qf"); ka6.AddRule("I", "9", "qf");
+                        var ka6 = new FSAutomate(new List<Symbol>() { "S0", "A", "B", "C", "D", "E", "F", "G", "H", "I", "qf" },
+                                                new List<Symbol>() { "p", "o", "#", " ", "-", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" },
+                                                new List<Symbol>() { "qf" }, "S0");
+                        ka6.AddRule("S0", "p", "A");
+                        ka6.AddRule("A", "o", "B");
+                        ka6.AddRule("B", "#", "C");
+                        ka6.AddRule("B", "-", "C");
+                        ka6.AddRule("B", " ", "C");
+                        ka6.AddRule("C", "0", "D"); ka6.AddRule("C", "1", "D"); ka6.AddRule("C", "2", "D"); ka6.AddRule("C", "3", "D"); ka6.AddRule("C", "4", "D"); ka6.AddRule("C", "5", "D"); ka6.AddRule("C", "6", "D"); ka6.AddRule("C", "7", "D"); ka6.AddRule("C", "8", "D"); ka6.AddRule("C", "9", "D");
+                        ka6.AddRule("D", "0", "E"); ka6.AddRule("D", "1", "E"); ka6.AddRule("D", "2", "E"); ka6.AddRule("D", "3", "E"); ka6.AddRule("D", "4", "E"); ka6.AddRule("D", "5", "E"); ka6.AddRule("D", "6", "E"); ka6.AddRule("D", "7", "E"); ka6.AddRule("D", "8", "E"); ka6.AddRule("D", "9", "E");
+                        ka6.AddRule("E", "-", "F");
+                        ka6.AddRule("E", " ", "F");
+                        ka6.AddRule("F", "0", "G"); ka6.AddRule("F", "1", "G"); ka6.AddRule("F", "2", "G"); ka6.AddRule("F", "3", "G"); ka6.AddRule("F", "4", "G"); ka6.AddRule("F", "5", "G"); ka6.AddRule("F", "6", "E"); ka6.AddRule("F", "7", "E"); ka6.AddRule("F", "8", "E"); ka6.AddRule("F", "9", "E");
+                        ka6.AddRule("G", "0", "H"); ka6.AddRule("G", "1", "H"); ka6.AddRule("G", "2", "H"); ka6.AddRule("G", "3", "H"); ka6.AddRule("G", "4", "H"); ka6.AddRule("G", "5", "H"); ka6.AddRule("G", "6", "H"); ka6.AddRule("G", "7", "H"); ka6.AddRule("G", "8", "H"); ka6.AddRule("G", "9", "H");
+                        ka6.AddRule("H", "0", "I"); ka6.AddRule("H", "1", "I"); ka6.AddRule("H", "2", "I"); ka6.AddRule("H", "3", "I"); ka6.AddRule("H", "4", "I"); ka6.AddRule("H", "5", "I"); ka6.AddRule("H", "6", "I"); ka6.AddRule("H", "7", "I"); ka6.AddRule("H", "8", "I"); ka6.AddRule("H", "9", "I");
+                        ka6.AddRule("I", "0", "qf"); ka6.AddRule("I", "1", "qf"); ka6.AddRule("I", "2", "qf"); ka6.AddRule("I", "3", "qf"); ka6.AddRule("I", "4", "qf"); ka6.AddRule("I", "5", "qf"); ka6.AddRule("I", "6", "qf"); ka6.AddRule("I", "7", "qf"); ka6.AddRule("I", "8", "qf"); ka6.AddRule("I", "9", "qf");
 
-                    Console.WriteLine("Enter line to execute :");
-                    ka6.Execute(Console.ReadLine());
-                    break;
+                        Console.WriteLine("Enter line to execute :");
+                        ka6.Execute(Console.ReadLine());
+                        break;
                     
                     case "3.1":
                         var ndfsa = new FSAutomate(new List<Symbol>() { "S0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "qf" },
@@ -508,10 +508,10 @@ namespace RaGsystems
                             pda.addDeltaRule("q0", "ε", "G", new List<Symbol>() { "q1" }, new List<Symbol>() { "a", "J" });
                             pda.addDeltaRule("q0", "ε", "I", new List<Symbol>() { "q1" }, new List<Symbol>() { "o" });
                             pda.addDeltaRule("q0", "ε", "J", new List<Symbol>() { "q1" }, new List<Symbol>() { "o" });
-                            pda.addDeltaRule("q0", "a", "a", new List<Symbol>() { "q1" }, new List<Symbol>() { "ε" });
-                            pda.addDeltaRule("q0", "b", "b", new List<Symbol>() { "q1" }, new List<Symbol>() { "ε" });
+                            pda.addDeltaRule("q0", "a", "a", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
+                            pda.addDeltaRule("q0", "b", "b", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
                             pda.addDeltaRule("q0", "g", "g", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
-                            pda.addDeltaRule("q0", "o", "o", new List<Symbol>() { "q1" }, new List<Symbol>() { "ε" });
+                            pda.addDeltaRule("q0", "o", "o", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
                             pda.Debug();
 
                             Console.WriteLine("\nВведите строку, пример :"); // aaabbb

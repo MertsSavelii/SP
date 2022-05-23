@@ -508,10 +508,10 @@ namespace RaGsystems
                             pda.addDeltaRule("q0", "ε", "G", new List<Symbol>() { "q1" }, new List<Symbol>() { "a", "J" });
                             pda.addDeltaRule("q0", "ε", "I", new List<Symbol>() { "q1" }, new List<Symbol>() { "o" });
                             pda.addDeltaRule("q0", "ε", "J", new List<Symbol>() { "q1" }, new List<Symbol>() { "o" });
-                            pda.addDeltaRule("q0", "a", "a", new List<Symbol>() { "q1" }, new List<Symbol>() { "ε" });
-                            pda.addDeltaRule("q0", "b", "b", new List<Symbol>() { "q1" }, new List<Symbol>() { "ε" });
+                            pda.addDeltaRule("q0", "a", "a", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
+                            pda.addDeltaRule("q0", "b", "b", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
                             pda.addDeltaRule("q0", "g", "g", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
-                            pda.addDeltaRule("q0", "o", "o", new List<Symbol>() { "q1" }, new List<Symbol>() { "ε" });
+                            pda.addDeltaRule("q0", "o", "o", new List<Symbol>() { "qf" }, new List<Symbol>() { "ε" });
                             pda.Debug();
 
                             Console.WriteLine("\nВведите строку, пример :"); // aaabbb
@@ -669,17 +669,17 @@ namespace RaGsystems
                         { // LL Разбор
                             var LL = new Grammar(new List<Symbol>() { "a", "b", "g", "o", "q" },
                                                  new List<Symbol>() { "H", "E", "F", "O", "Q", "G", "I", "J" },
-                                                 "H ");
+                                                 "H");
 
                             LL.AddRule("H", new List<Symbol>() { "a", "E" });
                             LL.AddRule("H", new List<Symbol>() { "b", "F" });
-                            LL.AddRule("E", new List<Symbol>() { "ε" });
+                            // LL.AddRule("E", new List<Symbol>() { "ε" });
                             LL.AddRule("E", new List<Symbol>() { "I" });
                             LL.AddRule("E", new List<Symbol>() { "O" });
                             LL.AddRule("F", new List<Symbol>() { "G" });
-                            LL.AddRule("F", new List<Symbol>() { "ε" });
+                            // LL.AddRule("F", new List<Symbol>() { "ε" });
                             LL.AddRule("O", new List<Symbol>() { "o", "Q" });
-                            LL.AddRule("Q", new List<Symbol>() { "ε" });
+                            // LL.AddRule("Q", new List<Symbol>() { "ε" });
                             LL.AddRule("Q", new List<Symbol>() { "O" });
                             LL.AddRule("G", new List<Symbol>() { "g" });
                             LL.AddRule("G", new List<Symbol>() { "a", "J" });

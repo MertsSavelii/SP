@@ -8,36 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/savelijmerc/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MYLIBRARY\\0. Courses\\Course_Compiler\\Recognising and Generating Software Systems (rag-systems)\\For students\\RaGsystems\\RaGsystems.csproj",
+      "projectUniqueName": "/Users/savelijmerc/Documents/GitHub/SP/lab4/RaGsystems.csproj",
       "projectName": "RaGsystems",
-      "projectPath": "D:\\MYLIBRARY\\0. Courses\\Course_Compiler\\Recognising and Generating Software Systems (rag-systems)\\For students\\RaGsystems\\RaGsystems.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "D:\\MYLIBRARY\\0. Courses\\Course_Compiler\\Recognising and Generating Software Systems (rag-systems)\\For students\\RaGsystems\\obj\\",
+      "projectPath": "/Users/savelijmerc/Documents/GitHub/SP/lab4/RaGsystems.csproj",
+      "packagesPath": "/Users/savelijmerc/.nuget/packages/",
+      "outputPath": "/Users/savelijmerc/Documents/GitHub/SP/lab4/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/savelijmerc/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
